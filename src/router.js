@@ -39,7 +39,7 @@ export class RouterComp extends Component {
             {this.state.loggedIn ? (
               <Redirect
                 to={{
-                  pathname: '/dashboard',
+                  pathname: '/products',
                 }}
               />
             ) : (
@@ -47,7 +47,7 @@ export class RouterComp extends Component {
             )}
           </Route>
 
-          <Route path="/dashboard" exact strict>
+          <Route path="/products" exact strict>
             {!this.state.loggedIn ? (
               <Redirect to="/" />
             ) : (
