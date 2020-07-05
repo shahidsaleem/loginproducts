@@ -1,0 +1,27 @@
+.errorMsg {
+  color: red;
+}
+.activeBg {
+  background-color: #007bff !important;
+  color: #fff;
+}
+.striped-list {
+  font-size: 14px;
+}
+.striped-list li {
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  background-color: #fcfcfc;
+}
+.striped-list > li:nth-of-type(odd) {
+  background-color: #eee;
+}
+
+@media only screen and (max-width: 580px) {
+  .productList {
+    font-size: 12px;
+  }
+  .deleteBtn {
+    padding: 1px !important;
+    font-size: 10px !important;
+  }
+}
